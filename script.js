@@ -66,7 +66,9 @@ function yearRange(min,max){
 }
 console.log(yearRange(1967,1968));
 
-// 4.
+// 4. Finds all of the albums in the top 500 list with a selected music subgenre.
+// param selectedSubGenre {string} - the name of a subgenre that corresponds to the subgenre (or one of the subgenres) of an album (will correspond to multiple albums in almost every case).
+// return subGenreAlbumList {list} - it returns the list of albums that includes the subgenre selected.
 function subGenreSearch(selectedSubGenre){
   var subGenreAlbumList = [];
   for (var i=0; i<subGenre.length; i++){
