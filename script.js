@@ -16,8 +16,8 @@ for (let i in yearTemp){
 }
 
 // 1. Finds all of the albums in the top 500 list with a selected music genre.
-// @param selectedGenre {string} - the name of a genre that corresponds to the genre (or one of the genres) of an album (will correspond to multiple albums in almost every case).
-//@return genreAlbumList {list} - it returns the list of albums that includes the genre selected.
+// param selectedGenre {string} - the name of a genre that corresponds to the genre (or one of the genres) of an album (will correspond to multiple albums in almost every case).
+// return genreAlbumList {list} - it returns the list of albums that includes the genre selected.
 function genreSearch(selectedGenre){
   var genreAlbumList = [];
   for (var i=0; i<genre.length; i++){
@@ -32,7 +32,9 @@ function genreSearch(selectedGenre){
 }
 console.log(genreSearch("Blues"));
 
-// 2. 
+// 2. Finds the album with the selected rank (rank in the Rolling Stones top 500 list).
+// param selectedRank {number} - the rank that corresponds to an album in the list.
+// return albumWithRank {string} - it returns the name of the album with the rank that was selected as the input.
 function rankSearch(selectedRank){
   var albumWithRank = "";
   for (var i=0; i<rank.length; i++){
@@ -47,7 +49,7 @@ function rankSearch(selectedRank){
 }
 console.log(rankSearch(1));
 
-// 3 works
+// 3. 
 function yearRange(min,max){
   var albums = [];
   for (var i=0; i<year.length; i++){
