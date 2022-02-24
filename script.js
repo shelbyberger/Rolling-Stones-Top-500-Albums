@@ -30,7 +30,6 @@ function genreSearch(selectedGenre){
   }
   return genreAlbumList;
 }
-console.log(genreSearch("Blues"));
 
 // 2. Finds the album with the selected rank (rank in the Rolling Stones top 500 list).
 // param selectedRank {number} - the rank that corresponds to an album in the list.
@@ -47,7 +46,6 @@ function rankSearch(selectedRank){
   }
   return albumWithRank;
 }
-console.log(rankSearch(1));
 
 // 3. Finds all of the albums on the top 500 list that were released between two given years
 // param (min,max) {numbers} - a minimum and a maximum year, where each corresponds to the year that an album was released, but together they create a range.
@@ -64,7 +62,6 @@ function yearRange(min,max){
   }
   return albums;
 }
-console.log(yearRange(1967,1968));
 
 // 4. Finds all of the albums in the top 500 list with a selected music subgenre.
 // param selectedSubGenre {string} - the name of a subgenre that corresponds to the subgenre (or one of the subgenres) of an album (will correspond to multiple albums in almost every case).
@@ -81,7 +78,6 @@ function subGenreSearch(selectedSubGenre){
   }
   return subGenreAlbumList;
 }
-console.log(subGenreSearch("Blues Rock"));
 
 // 5. Finds all albums on the top 500 list that are by a selected artist/band.
 // param musicArtist {string} - the name of a music artist.
@@ -98,7 +94,6 @@ function artistSearch(musicArtist){
   }
   return artistAlbums;
 }
-console.log(artistSearch("The Beatles"));
 
 // utils.js
 function getColumn(url, columnNumber){
