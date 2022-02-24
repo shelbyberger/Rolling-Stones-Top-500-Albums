@@ -15,7 +15,9 @@ for (let i in yearTemp){
   year.push(Number(yearTemp[i]).toFixed());
 }
 
-// 1 works
+// 1. Finds all of the albums in the top 500 list with a selected music genre.
+// @param selectedGenre {string} - the name of a genre that corresponds to the genre (or one of the genres) of an album (will correspond to multiple albums in almost every case).
+//@return genreAlbumList {list} - it returns the list of albums that includes the genre selected.
 function genreSearch(selectedGenre){
   var genreAlbumList = [];
   for (var i=0; i<genre.length; i++){
@@ -30,7 +32,7 @@ function genreSearch(selectedGenre){
 }
 console.log(genreSearch("Blues"));
 
-// 2 works
+// 2. 
 function rankSearch(selectedRank){
   var albumWithRank = "";
   for (var i=0; i<rank.length; i++){
