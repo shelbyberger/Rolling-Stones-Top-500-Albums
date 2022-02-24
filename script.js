@@ -49,7 +49,9 @@ function rankSearch(selectedRank){
 }
 console.log(rankSearch(1));
 
-// 3. 
+// 3. Finds all of the albums on the top 500 list that were released between two given years
+// param (min,max) {numbers} - a minimum and a maximum year, where each corresponds to the year that an album was released, but together they create a range.
+// return albums {list} - it returns the list of albums that were released between the minimum release year and the maximum release year.
 function yearRange(min,max){
   var albums = [];
   for (var i=0; i<year.length; i++){
@@ -64,7 +66,7 @@ function yearRange(min,max){
 }
 console.log(yearRange(1967,1968));
 
-// 4 works
+// 4.
 function subGenreSearch(selectedSubGenre){
   var subGenreAlbumList = [];
   for (var i=0; i<subGenre.length; i++){
@@ -79,7 +81,7 @@ function subGenreSearch(selectedSubGenre){
 }
 console.log(subGenreSearch("Blues Rock"));
 
-// 5 works
+// 5.
 function artistSearch(musicArtist){
   var artistAlbums = [];
   for (var i=0; i<artist.length; i++){
