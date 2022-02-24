@@ -83,7 +83,9 @@ function subGenreSearch(selectedSubGenre){
 }
 console.log(subGenreSearch("Blues Rock"));
 
-// 5.
+// 5. Finds all albums on the top 500 list that are by a selected artist/band.
+// param musicArtist {string} - the name of a music artist.
+// return artistAlbums {list} - it returns the list of albums on the top 500 list by the selected artist.
 function artistSearch(musicArtist){
   var artistAlbums = [];
   for (var i=0; i<artist.length; i++){
